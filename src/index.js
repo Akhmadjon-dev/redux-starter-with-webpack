@@ -3,10 +3,9 @@ import * as actions from "./store/action";
 
 console.log(store);
 
-store.dispatch(actions.bugAdded("salom bu yomon bug rosa jonga tegdi"));
-store.dispatch(actions.bugAdded("salom bu yomon bug rosa jonga tegdi"));
-store.dispatch(actions.bugAdded("salom bu yomon bug rosa jonga tegdi"));
-store.dispatch(actions.bugAdded("salom bu yomon bug rosa jonga tegdi"));
+store.subscribe(() => {
+  console.log("store changed");
+});
 store.dispatch(actions.bugAdded("salom bu yomon bug rosa jonga tegdi"));
 store.dispatch(actions.bugAdded("salom bu yomon bug rosa jonga tegdi"));
 store.dispatch(actions.bugAdded("salom bu yomon bug rosa jonga tegdi"));
